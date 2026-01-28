@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Offset to account for your sticky navbar height */
+[id] {
+    scroll-margin-top: 80px;
+}
