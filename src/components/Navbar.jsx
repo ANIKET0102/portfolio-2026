@@ -10,14 +10,26 @@ import {
 } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
+// const navigation = [
+//   { name: "About", href: "#", current: true },
+//   {
+//     name: "Resume",
+//     href: "https://drive.google.com/file/d/1ibjDTY6QObOyxsiZzc1nqM329WcMRrXq/view?usp=drive_link",
+//     current: false,
+//   },
+//   { name: "Projects", href: "#", current: false },
+//   { name: "Experiences", href: "#MyExperience", current: false },
+// ];
+
+// Navbar.jsx
 const navigation = [
-  { name: "About", href: "#", current: true },
+  { name: "About", href: "#About", current: false }, // Updated to #About
   {
     name: "Resume",
     href: "https://drive.google.com/file/d/1ibjDTY6QObOyxsiZzc1nqM329WcMRrXq/view?usp=drive_link",
     current: false,
   },
-  { name: "Projects", href: "#", current: false },
+  { name: "Projects", href: "#Projects", current: false }, // Updated to #Projects
   { name: "Experiences", href: "#MyExperience", current: false },
 ];
 
