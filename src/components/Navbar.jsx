@@ -48,7 +48,7 @@ function Navbar() {
             <div className="flex shrink-0 items-center">
               <img
                 alt="Your Company"
-                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+                src="src\assets\Profile.jpg"
                 className="h-8 w-auto"
               />
             </div>
@@ -88,7 +88,7 @@ function Navbar() {
                   <span className="sr-only">Open user menu</span>
                   <img
                     alt="User profile"
-                    src="\src\assets\Profile.jpg"
+                    src="src\assets\Profile.jpg"
                     className="h-8 w-8 rounded-full"
                   />
                 </MenuButton>
