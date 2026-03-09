@@ -1,12 +1,17 @@
-
-import React from "react";
 import {
   CloudArrowUpIcon,
   LockClosedIcon,
   ServerIcon,
 } from "@heroicons/react/20/solid";
+import bgImage from "../assets/Bg.png";
 
 const features = [
+  {
+    name: "Infosys || Full-Stack Intern",
+    description:
+      "Engineered a production-ready application by leveraging a modern, scalable technology stack to ensure high performance.",
+    icon: ServerIcon,
+  },
   {
     name: "Horizon Flare || Web-Development Intern.",
     description:
@@ -65,10 +70,18 @@ function MyExperience() {
                     </dt>{" "}
                     <br />
                     <dd className="inline">{feature.description}</dd>
-                    <br />
-                    <dd className="inline">{feature.description1}</dd>
-                    <br />
-                    <dd className="inline">{feature.description2}</dd>
+                    {feature.description1 && (
+                      <>
+                        <br />
+                        <dd className="inline">{feature.description1}</dd>
+                      </>
+                    )}
+                    {feature.description2 && (
+                      <>
+                        <br />
+                        <dd className="inline">{feature.description2}</dd>
+                      </>
+                    )}
                   </div>
                 ))}
               </dl>
@@ -76,7 +89,7 @@ function MyExperience() {
           </div>
           <img
             alt="Product screenshot"
-            src="src\assets\Bg.png"
+            src={bgImage}
             width={2432}
             height={1442}
             className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"

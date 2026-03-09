@@ -9,6 +9,7 @@ import {
   MenuItems,
 } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import profileImg from "../assets/Profile.jpg";
 
 // const navigation = [
 //   { name: "About", href: "#", current: true },
@@ -60,7 +61,7 @@ function Navbar() {
             <div className="flex shrink-0 items-center">
               <img
                 alt="Your Company"
-                src="src\assets\Profile.jpg"
+                src={profileImg}
                 className="h-8 w-auto"
               />
             </div>
@@ -100,7 +101,7 @@ function Navbar() {
                   <span className="sr-only">Open user menu</span>
                   <img
                     alt="User profile"
-                    src="src\assets\Profile.jpg"
+                    src={profileImg}
                     className="h-8 w-8 rounded-full"
                   />
                 </MenuButton>
